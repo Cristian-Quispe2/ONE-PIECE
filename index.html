@@ -11,7 +11,7 @@
         }
 
         body {
-            background-color: rgb(18, 18, 19);
+            background-color: #000000;
             color: rgb(235, 213, 197);
         }
 
@@ -27,7 +27,7 @@
 
         header h1 {
             text-align: center;
-            color: #0d70cd;
+            color: #0b3075;
             font-size: 60px;
         }
 
@@ -37,22 +37,20 @@
         }
 
         nav a {
-            color: #333;
+            color: #fefefe;
             font-size: 25px;
             text-decoration: none;
             font-weight: 600;
             margin-left: 60px;
             transition: color 1s;
-            /*text-transform: uppercase;*/
         }
 
         nav a:hover {
-            color: #e85860;
+            color: #c8472c;
             font-size: 30px;
         }
 
         .logo {
-            background-color: #4CAF50;
             margin: 25px;
             width: 300px;
             height: 155px;
@@ -60,8 +58,15 @@
             padding-left: 5px;
         }
 
+        .logo img {
+            width: 300px;
+            height: 155px;
+            margin-right: 20px;
+            border-radius: 100px;
+        }
+
         .caja {
-            background-color: rgb(44, 47, 48);
+            background-color: rgb(48, 44, 47);
             padding: 20px;
             margin: 10px;
         }
@@ -94,40 +99,47 @@
             margin-top: 10px;
             margin-bottom: 10px;
         }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #007bff;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 300px;
+        }
 
         .caja2 {
+            float: left;
             overflow: hidden;
-            /* Para contener los elementos flotantes */
-            background-color: #e49d63;
-            /* Color de fondo */
+            background-color: #c8472c;
             padding: 20px;
-            /* Espaciado interno */
             border-radius: 8px;
-            /* Bordes redondeados */
-            max-width: 600px;
-            /* Ancho máximo de la caja */
-            margin: 20px auto;
-            /* Margen superior e inferior, centrada en la página */
+            max-width: 560px;
+            height: 550px;
+            margin: 20px;
         }
 
         .caja2 img {
             float: left;
-            /* Flota la imagen a la izquierda */
-            max-width: 100px;
-            /* Ancho máximo de la imagen */
+            width: 150px;
+            height: 430px;
             margin-right: 20px;
-            /* Espacio entre la imagen y el texto */
             border-radius: 5px;
-            /* Bordes redondeados para la imagen */
         }
 
         .caja2 p {
             margin: 0;
-            /* Elimina el margen del párrafo */
-            font-size: 16px;
-            /* Tamaño de la fuente */
+            font-size: 25px;
             color: #333;
-            /* Color del texto */
+        }
+        
+        .contenedor::after {
+            content: "";
+            display: table;
+            clear: both;
         }
     </style>
 </head>
@@ -135,13 +147,13 @@
 <body>
     <header>
         <div class="logo">
-            <img src="one2p.png" alt="" />
+            <img src="logo.jpg" alt="" />
         </div>
         <h1>ONE PIECE</h1>
         <nav>
             <a href="#ini">INICIO</a>
             <a href="#per">PERSONAJES</a>
-            <a href="#tra">TRAILER</a>
+            <a href="#his">HISTORIA</a>
         </nav>
     </header>
     <section class="caja">
@@ -149,6 +161,15 @@
             <a id="ini"></a>
             <h2>INICIO</h2>
             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis deleniti soluta inventore, animi quo
+                laboriosam quaerat dolorem aliquid consequatur, obcaecati vel rem possimus sed maxime tempore doloribus
+                impedit. Minus, iure?Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, nam! Sequi
+                porro, facilis eaque sint sit animi tempore amet beatae nobis! Saepe cum delectus, fugit ullam nesciunt
+                ab tenetur dolorum?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex numquam inventore
+                deserunt officia, exercitationem commodi, placeat possimus cum non sunt blanditiis id recusandae iure
+                porro. Quod, aperiam sint. A, voluptalor Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui
+                cum adipisci quod reprehenderit impedit laboriosam totam quos illum similique quasi modi suscipit, id
+                accusantium libero quia facilis iure eius vel.
                 One Piece es la historia de un chico llamado Monkey D. Luffy, quién se inspiró en Shanks, un pirata que
                 le salvó la vida, para convertirse en el Rey de los Piratas. Al comienzo de la serie, veinticuatro años
                 antes de la historia actual, un pirata llamado Gol D. Roger, conocido como el Rey de los Piratas, fue
@@ -156,30 +177,85 @@
                 desataron lo que sería conocida como «la Gran Era de la Piratería», innumerables piratas se dispusieron
                 a buscar el tesoro causando grandes problemas al Gobierno Mundial. Monkey D. Luffy se convierte en uno
                 de ellos, deseando ser el próximo Rey de los Piratas y se dispone a reunir compañeros de tripulación y
-                comenzar sus aventuras.
+                comenzar sus aventuras. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati ullam fuga
+                officiis tenetur vel quidem eligendi dolore explicabo, perferendis debitis, distinctio dicta excepturi
+                maiores vitae est quos nulla, provident facere.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum hic maxime, magni quas quos cupiditate
+                cum voluptas ipsam temporibus inventore quidem magnam dolorum praesentium? Officiis eaque ipsa sapiente
+                velit inventore!Lorem
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel illum blanditiis cupiditate consequuntur
+                enim natus! Minus mollitia beatae reiciendis debitis quidem, quam qui praesentium veniam! Deserunt
+                inventore porro magni minima. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                provident sint officiis quasi reiciendis voluptates eum enim itaque natus tempore alias odio eveniet
+                dicta, doloremque corrupti! Voluptatum debitis nisi neque?
             </p>
         </article>
         <article>
-            <a id="per"></a>
             <h2>PERSONAJES</h2>
-            <div class="caja2">
-                <img src="Luffy.jpg" alt="">
-                <p>Monkey D. Luffy (モンキー・Ｄ・ルフィ Monkī D. Rufi), más conocido como Luffy "Sombrero de Paja" (麦わらのルフィ
-                    Mugiwara no Rufi), (conocido como Ruffy en la versión de 4Kids) es el protagonista principal de la
-                    serie de manga y anime One Piece. Comió una fruta del diablo de clase paramecia llamada fruta Goma
-                    Goma, que le convirtió en un hombre de goma. Además de esto, posee varias habilidades que le hacen
-                    ser un pirata más que especial; un gran ejemplo de ello es la capacidad de usar el Haki del
-                    Conquistador ―que sólo lo posee una persona dentro de un millón― así como poseer también el Haki de
-                    Observación y el Haki de Armamento.</p>
+            <div class="contenedor">
+                <div class="caja2">
+                    <img src="Luffy.jpg" alt="">
+                    <p>Monkey D. Luffy (モンキー・Ｄ・ルフィ Monkī D. Rufi), más conocido como Luffy "Sombrero de Paja" (麦わらのルフィ
+                        Mugiwara no Rufi), (conocido como Ruffy en la versión de 4Kids) es el protagonista principal de la
+                        serie de manga y anime One Piece. Comió una fruta del diablo de clase paramecia llamada fruta Goma
+                        Goma, que le convirtió en un hombre de goma. Además de esto, posee varias habilidades que le hacen
+                        ser un pirata más que especial; un gran ejemplo de ello es la capacidad de usar el Haki del
+                        Conquistador ―que sólo lo posee una persona dentro de un millón― así como poseer también el Haki de
+                        Observación y el Haki de Armamento.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Roronoa.jpg" alt="">
+                    <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro) es un antiguo cazarrecompensas y actual espadachín y combatiente
+                        de los Piratas de Sombrero de Paja, además de uno de los principales protagonistas de One Piece.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quos accusamus cumque repellendus
+                        autem quisquam obcaecati consequuntur enim reprehenderit incidunt culpa vel delectus neque sequi
+                        asperiores! Nemo vel eveniet minus.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Sanji.jpg" alt="">
+                    <p>Sanji (サンジ Sanji), conocido como Pierna Negra (黒脚 Kuro Ashi) y nacido como Vinsmoke Sanji
+                        (ヴィンスモーク・サンジ Vinsumōku Sanji), es el cocinero de los Piratas de Sombrero de Paja, el tercer hijo de
+                        la familia Vinsmoke y uno de los protagonistas principales del manga y anime de One Piece.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Borsalino.jpg" alt="">
+                    <p>Borsalino (ボルサリーノ Borusarīno), más conocido como Kizaru (黄猿 Kizaru, lit. «Mono Amarillo») es uno de
+                        los tres almirantes del cuartel general de la Marina.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Nefertariri.jpg" alt="">
+                    <p>Nefertari Vivi (ネフェルタリ・ビビ Neferutari Bibi) es la princesa heredera del reino de Alabasta, ya que es
+                        hija de Cobra. Se infiltró en Los Barrocos tomando la identidad de la Srta. Miércoles junto a
+                        Igaram, quien se llamó Sr. 8, dentro de la organización para descubrir la identidad del misterioso
+                        líder Sr. 0 y su propósito. Tras ser descubierta es ayudada por los Piratas de Sombrero de Paja
+                        convirtiéndose en un miembro temporal de la banda hasta la derrota de Crocodile, tras lo cual
+                        decidió quedarse en su tierra por el bien de su país, para protegerlo y ayudar a reconstruirlo.
+                    <p>
+                </div>
+                <div class="caja2">
+                    <img src="Crocodile.jpg" alt="">
+                    <p>Sir Crocodile (サー・クロコダイル Sā Kurokodairu) conocido como el Rey del Desierto (砂漠の王 Sabaku no Ō),
+                        (Nombrado Cocodrilo en la versión de 4Kids) es un afamado pirata que formó parte de los Siete
+                        Guerreros del Mar, y el fundador y ex presidente en la sombra de la organización criminal Los
+                        Barrocos, donde adoptó el nombre en clave de Sr. 0. Actuó como antagonista principal de la saga de
+                        Alabasta, donde fue despojado de su título después de que sus intentos por hacerse con el control
+                        del Reino de Alabasta fuesen frustrados por los Piratas de Sombrero de Paja.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Nami.jpg" alt="">
+                    <p>Nami (ナミ Nami), apodada Ga​ta Ladrona (泥棒猫 Dorobō Neko), es una pirata y la navegante de los Piratas
+                        del Sombrero de Paja, así como una de las protagonistas principales de la serie. Es la tercer
+                        miembro de la tripulación y la segunda en unirse, haciéndolo oficialmente durante el arco del Parque
+                        Arlong.</p>
+                </div>
+                <div class="caja2">
+                    <img src="Usopp.jpg" alt="">
+                    <p>Usopp (ウソップ Usoppu) es el francotirador de los Piratas de Sombrero de Paja. Nació en Villa Syrup, en
+                        el Mar del Este. Es el cuarto miembro de la tripulación, el tercero en unirse oficialmente, y
+                        también el tercero en hacer acto de presencia al final del arco de Enies Lobby.</p>
+                </div>
             </div>
-            <div class="caja2">
-                <img src="Roronoa.jpg" alt="">
-                <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro) es un antiguo cazarrecompensas y actual espadachín y combatiente
-                    de los Piratas de Sombrero de Paja, además de uno de los principales protagonistas de One Piece.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quos accusamus cumque repellendus
-                    autem quisquam obcaecati consequuntur enim reprehenderit incidunt culpa vel delectus neque sequi
-                    asperiores! Nemo vel eveniet minus.</p>
-            </div>
+            <p></p>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
                 reprehenderit laboriosam in minima deserunt, similique illum nobis,
@@ -200,8 +276,8 @@
             </p>
         </article>
         <article>
-            <a id="tra"></a>
-            <h2>TRAILER</h2>
+            <a id="his"></a>
+            <h2>HISTORIA DE LUFFY</h2>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
                 reprehenderit laboriosam in minima deserunt, similique illum nobis,
