@@ -11,69 +11,56 @@
         }
 
         body {
-            background-color: #000000;
-            color: rgb(235, 213, 197);
-        }
-
-        header {
-            display: flex;
-            width: 90%;
-            height: 20vh;
-            margin-top: 50px;
-            align-items: center;
-            font-family: Monaco;
-            padding-top: 5px;
-        }
-
-        header h1 {
-            text-align: center;
-            color: #0b3075;
-            font-size: 60px;
+            background-color: rgb(132, 188, 218);
+            color: rgb(0, 0, 4);
         }
 
         nav {
-            position: absolute;
-            right: 50px;
+            background-color: rgb(0, 0, 4);
+            padding: 10px;
+            overflow: hidden;
+        }
+
+        .titulo {
+            float: left;
+            color: rgb(6, 123, 194);
+            font-size: 80px;
+            padding: 10px 10px;
+            margin-top: 20px;
         }
 
         nav a {
-            color: #fefefe;
+            float: right;
+            color: rgb(234, 196, 53);
             font-size: 25px;
             text-decoration: none;
-            font-weight: 600;
-            margin-left: 60px;
             transition: color 1s;
+            padding: 10px 15px;
+            margin-top: 50px;
         }
 
         nav a:hover {
             color: #c8472c;
-            font-size: 30px;
         }
 
         .logo {
-            margin: 25px;
             width: 300px;
             height: 155px;
             float: left;
             padding-left: 5px;
-        }
-
-        .logo img {
-            width: 300px;
-            height: 155px;
-            margin-right: 20px;
             border-radius: 100px;
         }
 
         .caja {
-            background-color: rgb(48, 44, 47);
+            background-color: rgb(234, 196, 53);
             padding: 20px;
             margin: 10px;
         }
 
         h2 {
             font-size: 35px;
-            color: cornflowerblue;
+            color: rgb(191, 6, 3);
+            text-align: center;
         }
 
         p {
@@ -84,41 +71,35 @@
         }
 
         .pie {
-            background-color: rgb(74, 74, 139);
+            background-color: rgb(6, 123, 194);
             margin: 10px;
             padding: 10px;
             font-size: 12px;
             font-weight: 800;
         }
-
-        .center {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            width: 50%;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .boton {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 5px;
-            background-color: #007bff;
-            color: white;
-            text-align: center;
-            text-decoration: none;
-            border-radius: 5px;
-            width: 300px;
+        .centrado {
+            width: 453px;
+            height: 280px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
         }
 
+        .centrado iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 453px;
+            height: 280px;
+        }
         .caja2 {
             float: left;
             overflow: hidden;
-            background-color: #c8472c;
+            background-color: rgb(132, 188, 218);
             padding: 20px;
             border-radius: 8px;
             max-width: 560px;
-            height: 550px;
+            height: 680px;
             margin: 20px;
         }
 
@@ -132,28 +113,39 @@
 
         .caja2 p {
             margin: 0;
-            font-size: 25px;
-            color: #333;
+            font-size: 30px;
+            color: black;
         }
-        
+
         .contenedor::after {
             content: "";
             display: table;
             clear: both;
+        }
+        .boton {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: rgb(6, 123, 194);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 350px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <img src="logo.jpg" alt="" />
-        </div>
-        <h1>ONE PIECE</h1>
         <nav>
-            <a href="#ini">INICIO</a>
-            <a href="#per">PERSONAJES</a>
-            <a href="#his">HISTORIA</a>
+            <img src="logo.jpg" alt="logo" class="logo">
+            <div class="titulo">ONE PIECE</div>
+            <div class="navbar">
+                <a href="#his">HISTORIA</a>
+                <a href="#per">PERSONAJES</a>
+                <a href="#ini">INICIO</a>
+            </div>
         </nav>
     </header>
     <section class="caja">
@@ -191,21 +183,27 @@
             </p>
         </article>
         <article>
+            <a id="per"></a>
             <h2>PERSONAJES</h2>
             <div class="contenedor">
                 <div class="caja2">
                     <img src="Luffy.jpg" alt="">
-                    <p>Monkey D. Luffy (モンキー・Ｄ・ルフィ Monkī D. Rufi), más conocido como Luffy "Sombrero de Paja" (麦わらのルフィ
-                        Mugiwara no Rufi), (conocido como Ruffy en la versión de 4Kids) es el protagonista principal de la
-                        serie de manga y anime One Piece. Comió una fruta del diablo de clase paramecia llamada fruta Goma
-                        Goma, que le convirtió en un hombre de goma. Además de esto, posee varias habilidades que le hacen
+                    <p>Monkey D. Luffy, más conocido como Luffy "Sombrero de Paja" (麦わらのルフィ
+                        Mugiwara no Rufi), (conocido como Ruffy en la versión de 4Kids) es el protagonista principal de
+                        la
+                        serie de manga y anime One Piece. Comió una fruta del diablo de clase paramecia llamada fruta
+                        Goma
+                        Goma, que le convirtió en un hombre de goma. Además de esto, posee varias habilidades que le
+                        hacen
                         ser un pirata más que especial; un gran ejemplo de ello es la capacidad de usar el Haki del
-                        Conquistador ―que sólo lo posee una persona dentro de un millón― así como poseer también el Haki de
+                        Conquistador ―que sólo lo posee una persona dentro de un millón― así como poseer también el Haki
+                        de
                         Observación y el Haki de Armamento.</p>
                 </div>
                 <div class="caja2">
                     <img src="Roronoa.jpg" alt="">
-                    <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro) es un antiguo cazarrecompensas y actual espadachín y combatiente
+                    <p>Roronoa Zoro (ロロノア・ ゾロ Roronoa Zoro) es un antiguo cazarrecompensas y actual espadachín y
+                        combatiente
                         de los Piratas de Sombrero de Paja, además de uno de los principales protagonistas de One Piece.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, quos accusamus cumque repellendus
                         autem quisquam obcaecati consequuntur enim reprehenderit incidunt culpa vel delectus neque sequi
@@ -214,19 +212,23 @@
                 <div class="caja2">
                     <img src="Sanji.jpg" alt="">
                     <p>Sanji (サンジ Sanji), conocido como Pierna Negra (黒脚 Kuro Ashi) y nacido como Vinsmoke Sanji
-                        (ヴィンスモーク・サンジ Vinsumōku Sanji), es el cocinero de los Piratas de Sombrero de Paja, el tercer hijo de
+                        (ヴィンスモーク・サンジ Vinsumōku Sanji), es el cocinero de los Piratas de Sombrero de Paja, el tercer hijo
+                        de
                         la familia Vinsmoke y uno de los protagonistas principales del manga y anime de One Piece.</p>
                 </div>
                 <div class="caja2">
                     <img src="Borsalino.jpg" alt="">
-                    <p>Borsalino (ボルサリーノ Borusarīno), más conocido como Kizaru (黄猿 Kizaru, lit. «Mono Amarillo») es uno de
+                    <p>Borsalino (ボルサリーノ Borusarīno), más conocido como Kizaru (黄猿 Kizaru, lit. «Mono Amarillo») es uno
+                        de
                         los tres almirantes del cuartel general de la Marina.</p>
                 </div>
                 <div class="caja2">
                     <img src="Nefertariri.jpg" alt="">
-                    <p>Nefertari Vivi (ネフェルタリ・ビビ Neferutari Bibi) es la princesa heredera del reino de Alabasta, ya que es
+                    <p>Nefertari Vivi (ネフェルタリ・ビビ Neferutari Bibi) es la princesa heredera del reino de Alabasta, ya que
+                        es
                         hija de Cobra. Se infiltró en Los Barrocos tomando la identidad de la Srta. Miércoles junto a
-                        Igaram, quien se llamó Sr. 8, dentro de la organización para descubrir la identidad del misterioso
+                        Igaram, quien se llamó Sr. 8, dentro de la organización para descubrir la identidad del
+                        misterioso
                         líder Sr. 0 y su propósito. Tras ser descubierta es ayudada por los Piratas de Sombrero de Paja
                         convirtiéndose en un miembro temporal de la banda hasta la derrota de Crocodile, tras lo cual
                         decidió quedarse en su tierra por el bien de su país, para protegerlo y ayudar a reconstruirlo.
@@ -237,20 +239,25 @@
                     <p>Sir Crocodile (サー・クロコダイル Sā Kurokodairu) conocido como el Rey del Desierto (砂漠の王 Sabaku no Ō),
                         (Nombrado Cocodrilo en la versión de 4Kids) es un afamado pirata que formó parte de los Siete
                         Guerreros del Mar, y el fundador y ex presidente en la sombra de la organización criminal Los
-                        Barrocos, donde adoptó el nombre en clave de Sr. 0. Actuó como antagonista principal de la saga de
-                        Alabasta, donde fue despojado de su título después de que sus intentos por hacerse con el control
+                        Barrocos, donde adoptó el nombre en clave de Sr. 0. Actuó como antagonista principal de la saga
+                        de
+                        Alabasta, donde fue despojado de su título después de que sus intentos por hacerse con el
+                        control
                         del Reino de Alabasta fuesen frustrados por los Piratas de Sombrero de Paja.</p>
                 </div>
                 <div class="caja2">
                     <img src="Nami.jpg" alt="">
-                    <p>Nami (ナミ Nami), apodada Ga​ta Ladrona (泥棒猫 Dorobō Neko), es una pirata y la navegante de los Piratas
+                    <p>Nami (ナミ Nami), apodada Ga​ta Ladrona (泥棒猫 Dorobō Neko), es una pirata y la navegante de los
+                        Piratas
                         del Sombrero de Paja, así como una de las protagonistas principales de la serie. Es la tercer
-                        miembro de la tripulación y la segunda en unirse, haciéndolo oficialmente durante el arco del Parque
+                        miembro de la tripulación y la segunda en unirse, haciéndolo oficialmente durante el arco del
+                        Parque
                         Arlong.</p>
                 </div>
                 <div class="caja2">
                     <img src="Usopp.jpg" alt="">
-                    <p>Usopp (ウソップ Usoppu) es el francotirador de los Piratas de Sombrero de Paja. Nació en Villa Syrup, en
+                    <p>Usopp (ウソップ Usoppu) es el francotirador de los Piratas de Sombrero de Paja. Nació en Villa Syrup,
+                        en
                         el Mar del Este. Es el cuarto miembro de la tripulación, el tercero en unirse oficialmente, y
                         también el tercero en hacer acto de presencia al final del arco de Enies Lobby.</p>
                 </div>
@@ -277,17 +284,78 @@
         </article>
         <article>
             <a id="his"></a>
-            <h2>HISTORIA DE LUFFY</h2>
+            <h2>HISTORIA Y RESUMEN</h2>
+            <a href="#crono" class="boton">Cronologia</a>
+            <a href="#luffy" class="boton">Luffy</a>
+            <a href="#ace" class="boton">Ace</a>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe quidem repellendus fugiat, omnis
+                inventore unde? Alias quo minus accusamus molestias tempora, veritatis cum sit facilis amet beatae nam
+                pariatur. Sed.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate recusandae explicabo praesentium
+                aliquid quam vel reiciendis perspiciatis aut. Suscipit assumenda voluptates natus vel quibusdam
+                cupiditate eligendi ad magnam iste dolorum.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum ex quam deserunt quae natus earum
+                doloribus, accusantium perspiciatis quo ea non ducimus, minus architecto molestiae ratione consectetur
+                reprehenderit ab provident?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, possimus alias ad quo, quia eius
+                vitae quibusdam quae, officiis blanditiis itaque velit inventore. Officiis vel libero voluptates
+                voluptatum nihil veniam.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid omnis id numquam, officia ea a quas
+                quos quae reiciendis iusto doloribus laudantium repellat neque eius expedita officiis nesciunt excepturi
+                ab.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur ut, necessitatibus nobis iure, facere
+                deserunt architecto cupiditate velit nulla sint eos totam cumque ex error fugit natus? Reprehenderit,
+                magni optio!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, porro delectus sapiente earum voluptas
+                praesentium tempore dolores temporibus maxime laboriosam at pariatur voluptatum maiores, voluptates,
+                sequi ea assumenda hic ipsam!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia cumque doloribus minima fugiat ex? Ipsa
+                commodi voluptas, repellat modi odio reiciendis minima exercitationem architecto nesciunt debitis hic
+                accusamus, nobis labore!l
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum facere quisquam odit aliquam molestiae
+                dolorem commodi ab, cumque nobis? Nostrum placeat iste, ipsam hic consectetur totam esse modi quibusdam
+                accusamus!
+            </p>
+            <a id="crono"></a>
+            <div class="centrado">
+                <iframe src="https://www.youtube.com/embed/b6_8m81MtZM?si=wzX3rNq1b3Y0fVuj" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </iframe>
+            </div>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque, quas culpa asperiores, architecto
+                nihil doloribus suscipit laborum necessitatibus hic a saepe ut quisquam minima ullam. Alias ab eaque
+                voluptate repellat.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta est excepturi molestias nesciunt,
+                doloribus nemo odio necessitatibus fugiat voluptate eius totam quis vero! Consequatur assumenda iure
+                dignissimos, tenetur eveniet veniam?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugiat exercitationem eius cupiditate
+                repellendus quod animi minima cum vel, error earum libero molestias sed omnis, odit reiciendis voluptas.
+                Adipisci, harum!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni, est commodi. Tempore praesentium, rem
+                corporis hic labore placeat voluptatibus nobis odit accusantium maiores molestias dolor animi, quidem
+                nemo vitae aut.
+
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
+                reprehenderit laboriosam in minima deserunt, similique illum nobis,
+                ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
+                architecto dolores eveniet. Pariatur, eos!
+            </p>
+            <a id="luffy"></a>
+            <div class="centrado">
+                <iframe src="https://www.youtube.com/embed/sSovEWQGTwg" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
                 reprehenderit laboriosam in minima deserunt, similique illum nobis,
                 ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
                 architecto dolores eveniet. Pariatur, eos!
             </p>
-            <iframe width="453" height="280" src="https://www.youtube.com/embed/sSovEWQGTwg"
-                title="One Piece: La Historia de LUFFY 🔶 | La vida de Monkey D. Luffy: Parte 1" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen class="center"></iframe>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
                 reprehenderit laboriosam in minima deserunt, similique illum nobis,
@@ -300,17 +368,30 @@
                 ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
                 architecto dolores eveniet. Pariatur, eos!
             </p>
+            <a id="ace"></a>
+            <div class="centrado">
+                <iframe src="https://www.youtube.com/embed/bBxndwMAT7A?si=MNbWucef7VVaEkMl" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
             <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
                 reprehenderit laboriosam in minima deserunt, similique illum nobis,
                 ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
                 architecto dolores eveniet. Pariatur, eos!
-            </p>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis
-                reprehenderit laboriosam in minima deserunt, similique illum nobis,
-                ipsam laborum debitis repellendus, velit hic perspiciatis tenetur
-                architecto dolores eveniet. Pariatur, eos!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorem neque, labore nemo nam magnam
+                laudantium delectus optio consequatur temporibus tenetur, nihil accusantium fuga eveniet repellendus?
+                Tenetur voluptatum voluptates blanditiis!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque saepe quibusdam laborum sunt vitae
+                dolorem, sed voluptatem, earum sint sapiente numquam dignissimos. Dignissimos cupiditate facilis, eaque
+                molestias cum tenetur hic.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit blanditiis enim ad dolorem, optio,
+                quibusdam magnam odio facere minus pariatur laboriosam asperiores beatae fugit rerum nam corporis,
+                soluta nesciunt reiciendis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptatibus provident, dolor quas saepe,
+                placeat doloribus consequuntur architecto inventore quos repellat iste tempore quae assumenda aliquam
+                praesentium facere. Corrupti, nobis!
             </p>
         </article>
     </section>
